@@ -565,6 +565,13 @@
             .side-deco { display:none; }
             .submit-btn { font-size:1.1rem; padding:14px 32px; }
 
+            /* detail cards appear instantly — no deferred-animation blank flash on scroll */
+            .detail-card {
+                animation: none;
+                opacity: 1;
+                transform: none;
+            }
+
             /* ── Mobile: keep glass look, disable only animations ── */
             .glass {
                 backdrop-filter: blur(20px);
