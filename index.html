@@ -326,7 +326,7 @@
             margin: 8px 0;
         }
         .detail-card {
-            background: rgba(255,255,255,0.08);
+            background: rgba(20,8,55,0.6);
             backdrop-filter: blur(24px) saturate(160%);
             -webkit-backdrop-filter: blur(24px) saturate(160%);
             border-radius: 22px;
@@ -371,32 +371,6 @@
         .detail-card:nth-child(3) h3 { color:var(--cyan);    text-shadow:0 0 10px rgba(0,212,255,0.5); }
         .detail-card p { color:rgba(255,255,255,0.85); font-size:1.1rem; line-height:1.8; }
 
-        /* ── Editable fields ── */
-        .editable-field {
-            background: rgba(255,255,255,0.1);
-            border: 1px solid rgba(255,255,255,0.22);
-            border-radius: 10px;
-            padding: 5px 14px;
-            display: inline-block;
-            font-family: 'Fredoka', sans-serif;
-            font-size: 1.1rem;
-            color: rgba(255,255,255,0.95);
-            font-weight: 500;
-            cursor: text;
-            box-shadow: inset 0 1px 0 rgba(255,255,255,0.18);
-            transition: all 0.25s ease;
-        }
-        .editable-field:hover {
-            background: rgba(255,255,255,0.16);
-            border-color: rgba(233,30,140,0.6);
-            box-shadow: 0 0 14px rgba(233,30,140,0.28), inset 0 1px 0 rgba(255,255,255,0.18);
-        }
-        .editable-field:focus {
-            outline: none;
-            border-color: var(--cyan);
-            box-shadow: 0 0 16px rgba(0,212,255,0.38), inset 0 1px 0 rgba(255,255,255,0.18);
-            background: rgba(0,212,255,0.1);
-        }
 
         /* ── RSVP section ── */
         .rsvp-section {
@@ -654,9 +628,9 @@
                     <span class="detail-icon">⏳</span>
                     <h3>THE QUEST BEGINS</h3>
                     <p>
-                        <span class="editable-field" contenteditable="true">Sunday, May 10, 2026</span>
+                        Sunday, May 10, 2026
                         <br><br>
-                        <span class="editable-field" contenteditable="true">2:00 PM – 4:00 PM</span>
+                        2:00 PM – 4:00 PM
                     </p>
                 </div>
 
@@ -677,7 +651,7 @@
                     <span class="detail-icon">🎤</span>
                     <h3>EPIC ADVENTURES</h3>
                     <p>
-                        <span class="editable-field" contenteditable="true">Bouncy castle battles, K-pop dance-offs, legendary pizza, snacks, drinks &amp; more!</span>
+                        Bouncy castle battles, K-pop dance-offs, legendary pizza, snacks, drinks &amp; more!
                     </p>
                 </div>
             </div>
@@ -904,11 +878,6 @@ document.addEventListener('click', function(e) {
     }
 });
 
-// ── EDITABLE FIELDS ───────────────────────────────────────────────────────────
-document.querySelectorAll('.editable-field').forEach(el=>{
-    el.addEventListener('focus', function(){ this.style.background='rgba(0,212,255,0.08)'; });
-    el.addEventListener('blur',  function(){ this.style.background=''; });
-});
 </script>
 </body>
 </html>
